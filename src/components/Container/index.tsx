@@ -1,5 +1,5 @@
 // Style
-import style from "../../style/scss/components/Container.module.scss";
+import style from "./Container.module.scss";
 
 // Props definition
 type ContainerProps = {

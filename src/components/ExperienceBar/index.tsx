@@ -1,5 +1,5 @@
 // Style
-import style from "../../style/scss/components/ExperienceBar.module.scss";
+import style from "./ExperienceBar.module.scss";
 
 export default function ExperienceBar() {
   return (
