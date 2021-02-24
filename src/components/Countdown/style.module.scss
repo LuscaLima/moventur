@@ -59,6 +59,10 @@
     background-color: $white;
     border-bottom: 4px solid $orange;
     cursor: not-allowed;
+
+    img {
+      margin-left: 0.5rem;
+    }
   }
 
   &.abandon {

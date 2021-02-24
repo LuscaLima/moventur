@@ -85,7 +85,8 @@ export default function Countdown() {
         </button>
       ) : hasFinished ? (
         <button disabled className={style.countdownButton}>
-          Ciclo encerrado
+          Ciclo encerrado{" "}
+          <img src="icons/check_circle.svg" alt="Ícone de ciclo concluído" />
         </button>
       ) : (
         <button type="button" className={style.countdownButton} onClick={start}>
