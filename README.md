@@ -6,11 +6,11 @@ This project was based on the project presented at Next Level Week # 04
 
 > More description on the way 😉
 
-## Status
+## ⬆️ Status
 
 > 🚧 The main phase of this project is still ongoing 🚧
 
-## Features (they can be incremented)
+## ✔️ Features (they can be incremented)
 
 - List
   - [x] Level progress bar;
@@ -65,5 +65,5 @@ The following tools were used in the construction of the project:
 
 Made with 💜 by **Lucas Lima**. 👋 Contact me:
 
-![Badge](https://img.shields.io/static/v1?label=&message=lusca.lima@outlook.com&color=0078D4&style=flat-square&logo=microsoft&link=lusca.lima@outlook.com)
-![Badge](https://img.shields.io/static/v1?label=&message=Lucas%20Lima&color=0A66C2&style=flat-square&logo=linkedin&link=https://www.linkedin.com/in/lucas-lima-635935196/)
+![Badge](https://img.shields.io/static/v1?label=&message=lusca.lima@outlook.com&color=0078D4&style=for-the-badge&logo=microsoft-outlook&link=mailto:lusca.lima@outlook.com)
+![Badge](https://img.shields.io/static/v1?label=&message=Lucas%20Lima&color=0A66C2&style=for-the-badge&logo=linkedin&url=https://www.linkedin.com/in/lucas-lima-635935196/)
