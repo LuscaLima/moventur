@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from "react";
-import { ChallengeContext } from "../../contexts/ChallengeContext";
+import { useContext, useEffect, useState } from 'react'
+import { ChallengeContext } from '../../contexts/ChallengeContext'
 
 // Style
-import style from "./style.module.scss";
+import style from './style.module.scss'
 
 // Makes the object unmodifiable
 const METRICS = Object.freeze({
@@ -11,39 +11,39 @@ const METRICS = Object.freeze({
   secondsPerMinute: 60,
   initialActive: false,
   initialFinished: false,
-});
+})
 
 export default function Countdown() {
   // Get ChallengesContext
-  const { startNewChallenge } = useContext(ChallengeContext);
+  const { startNewChallenge } = useContext(ChallengeContext)
 
-  const [time, setTime] = useState(METRICS.defaultTime);
-  const [isActive, setIsActive] = useState(METRICS.initialActive);
-  const [hasFinished, setHasFinished] = useState(METRICS.initialFinished);
+  const [time, setTime] = useState(METRICS.defaultTime)
+  const [isActive, setIsActive] = useState(METRICS.initialActive)
+  const [hasFinished, setHasFinished] = useState(METRICS.initialFinished)
 
-  const minutes = Math.floor(time / METRICS.secondsPerMinute);
-  const seconds = time % METRICS.secondsPerMinute;
+  const minutes = Math.floor(time / METRICS.secondsPerMinute)
+  const seconds = time % METRICS.secondsPerMinute
 
-  const [minLeft, minRight] = minutes.toString().padStart(2, "0").split("");
-  const [secLeft, secRight] = seconds.toString().padStart(2, "0").split("");
+  const [minLeft, minRight] = minutes.toString().padStart(2, '0').split('')
+  const [secLeft, secRight] = seconds.toString().padStart(2, '0').split('')
 
-  let timeout: NodeJS.Timeout;
+  let timeout: NodeJS.Timeout
 
   // Start the countdown
   function start() {
-    setIsActive(true);
+    setIsActive(true)
   }
 
   // Update the countdown
   function update() {
-    setTime(time - 1);
+    setTime(time - 1)
   }
 
   // Reset the countdown
   function reset() {
-    clearTimeout(timeout);
-    setIsActive(METRICS.initialActive);
-    setTime(METRICS.defaultTime);
+    clearTimeout(timeout)
+    setIsActive(METRICS.initialActive)
+    setTime(METRICS.defaultTime)
   }
 
   // Collateral effects
@@ -59,13 +59,13 @@ export default function Countdown() {
 
   useEffect(() => {
     if (isActive && time > 0) {
-      timeout = setTimeout(update, 1000);
+      timeout = setTimeout(update, 1000)
     } else if (isActive && time === 0) {
-      setHasFinished(true);
-      setIsActive(false);
-      startNewChallenge();
+      setHasFinished(true)
+      setIsActive(false)
+      startNewChallenge()
     }
-  }, [isActive, time]);
+  }, [isActive, time])
 
   return (
     <>
@@ -90,7 +90,7 @@ export default function Countdown() {
         </button>
       ) : hasFinished ? (
         <button disabled className={style.countdownButton}>
-          Ciclo encerrado{" "}
+          Ciclo encerrado{' '}
           <img src="icons/check_circle.svg" alt="Ícone de ciclo concluído" />
         </button>
       ) : (
@@ -99,5 +99,5 @@ export default function Countdown() {
         </button>
       )}
     </>
-  );
+  )
 }

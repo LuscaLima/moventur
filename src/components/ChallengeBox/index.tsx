@@ -1,29 +1,46 @@
-import { useState } from "react";
+import { useContext } from 'react'
+import { ChallengeContext } from '../../contexts/ChallengeContext'
 
 // Style
-import style from "./style.module.scss";
+import style from './style.module.scss'
 
 export default function ChallengeBox() {
-  const [hasActiveChallenge, setHasActiveChallenge] = useState(true);
+  const { activeChallenge, resetChallenge } = useContext(ChallengeContext)
 
   return (
     <div className={style.challengeBox}>
-      {hasActiveChallenge ? (
+      {activeChallenge ? (
         <div className={style.active}>
           <header>
-            <strong>Ganhe 400xp</strong>
+            <strong>Ganhe {activeChallenge.amount} XP</strong>
           </header>
           <main>
-            <img src="icons/hand.svg" alt="Mão com um peso" loading="lazy" />
+            {activeChallenge.type === 'body' ? (
+              <img
+                src="icons/body.svg"
+                alt="Exercício de corpo"
+                loading="lazy"
+              />
+            ) : (
+              <img
+                src="icons/eye.svg"
+                alt="Excercício de olho"
+                loading="lazy"
+              />
+            )}
             <strong>Exercite-se</strong>
             <p>
               É agora Lucas, bora lá meu parça.
               <br />
-              Ande por 3 minutos e exercite suas pernas para você ficar suadável
+              {activeChallenge.description}
             </p>
           </main>
           <footer>
-            <button type="button" className={style.failButton}>
+            <button
+              type="button"
+              className={style.failButton}
+              onClick={resetChallenge}
+            >
               Falhei
             </button>
             <button type="button" className={style.completeButton}>
@@ -43,5 +60,5 @@ export default function ChallengeBox() {
         </div>
       )}
     </div>
-  );
+  )
 }
