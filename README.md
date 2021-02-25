@@ -17,6 +17,7 @@ This project was based on the project presented at Next Level Week # 04
   - [x] Completed challenges counter;
   - [x] Countdown;
   - [x] Challenge display;
+  - [x] Text and audio notifications;
   - [ ] Reload page and keep countdown;
   - [ ] Dark mode.
 
