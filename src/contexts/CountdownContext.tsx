@@ -62,6 +62,7 @@ export default function CountdownProvider({
     clearTimeout(timeout)
     setIsActive(METRICS.initialActive)
     setTime(METRICS.defaultTime)
+    setHasFinished(METRICS.initialFinished)
   }
 
   // Collateral effects
