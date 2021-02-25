@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ChallengeContext } from "../../contexts/ChallengeContext";
 
 // Style
 import style from "./style.module.scss";
@@ -13,6 +14,9 @@ const METRICS = Object.freeze({
 });
 
 export default function Countdown() {
+  // Get ChallengesContext
+  const { startNewChallenge } = useContext(ChallengeContext);
+
   const [time, setTime] = useState(METRICS.defaultTime);
   const [isActive, setIsActive] = useState(METRICS.initialActive);
   const [hasFinished, setHasFinished] = useState(METRICS.initialFinished);
@@ -43,15 +47,15 @@ export default function Countdown() {
   }
 
   // Collateral effects
-  useEffect(() => {
-    const currentTime = parseInt(localStorage.getItem("currentTime"));
-    const isActive = localStorage.getItem("isActive") === "true";
+  // useEffect(() => {
+  //   const currentTime = parseInt(localStorage.getItem("currentTime"));
+  //   const isActive = localStorage.getItem("isActive") === "true";
 
-    if (currentTime && isActive) {
-      setTime(currentTime - 1);
-      start();
-    }
-  }, []);
+  //   if (currentTime && isActive) {
+  //     setTime(currentTime - 1);
+  //     start();
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (isActive && time > 0) {
@@ -59,6 +63,7 @@ export default function Countdown() {
     } else if (isActive && time === 0) {
       setHasFinished(true);
       setIsActive(false);
+      startNewChallenge();
     }
   }, [isActive, time]);
 

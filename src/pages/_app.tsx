@@ -1,8 +1,14 @@
+import ChallengesProvider from "../contexts/ChallengeContext";
+
 // Style
 import "../style/global.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function Moventur({ Component, pageProps }) {
+  return (
+    <ChallengesProvider>
+      <Component {...pageProps} />
+    </ChallengesProvider>
+  );
 }
 
-export default MyApp;
+export default Moventur;
