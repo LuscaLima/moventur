@@ -6,9 +6,7 @@ This project was based on the project presented at Next Level Week # 04
 
 > More description on the way 😉
 
-## Table of contents
-
-<!--ts-->
+<!-- ## Table of contents
 
 - [Moventur](#🏃‍♂️-moventur)
 - [Table of contents](#table-of-contents)
@@ -18,8 +16,7 @@ This project was based on the project presented at Next Level Week # 04
 - [Prerequisites](#💻-prerequisites)
 - [Running](#⚙️-running)
 - [Technologies](#⚛️-technologies)
-- [Author](#👨‍💼-author)
-<!--te-->
+- [Author](#👨‍💼-author) -->
 
 ## ⬆️ Status
 
@@ -27,7 +24,7 @@ This project was based on the project presented at Next Level Week # 04
 
 > 🚧 The construction of other pages and responsiveness is underway
 
-## ✔️ Features
+## Features
 
 - List
   - **by NLW #04**
