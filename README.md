@@ -8,7 +8,8 @@ This project was based on the project presented at Next Level Week # 04
 
 ## ⬆️ Status
 
-> 🚧 The main phase of this project is still ongoing 🚧
+> ✔️ The main phase is complete
+> 🚧 The construction of other pages and responsiveness is underway
 
 ## ✔️ Features (they can be incremented)
 
@@ -34,11 +35,11 @@ This project was based on the project presented at Next Level Week # 04
 
 ## 🖼️ Demo
 
-To use the application, visit [here](https://moventur.vercel.app/).
+To use the application, visit **[here](https://moventur.vercel.app/)**.
 
 - Countdown screen (main screen with a displayed challenge).
 
-![Countdown Screen](./screenshots/countdown_screen.png)
+![Countdown Screen](./screenshots/countdown_screen_01.png)
 
 ## 💻 Prerequisites
 
