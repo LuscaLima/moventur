@@ -13,17 +13,27 @@ This project was based on the project presented at Next Level Week # 04
 ## ✔️ Features (they can be incremented)
 
 - List
-  - [x] Level progress bar;
-  - [x] Completed challenges counter;
-  - [x] Countdown;
-  - [x] Challenge display;
-  - [x] Text and audio notifications;
-  - [ ] Reload page and keep countdown;
-  - [ ] Dark mode.
+  - by NLW #04
+    - [x] Level progress bar;
+    - [x] Completed challenges counter;
+    - [x] Countdown;
+    - [x] Challenge display;
+    - [x] Text and audio notifications;
+    - [x] Persistence of data in cookies.
+  - suggested by NLW #04
+    - [ ] Login with Github;
+    - [ ] Serveless;
+    - [ ] Rankig page.
+  - by ME
+    - [ ] Reload page and keep countdown;
+    - [ ] Dark mode;
+    - [ ] Portuguese and english idioms;
+    - [ ] Other color scheme;
+    - [ ] PWA.
 
 ## 🖼️ Demo
 
-To use the application, visit [here](https://moventur.vercel.app/)
+To use the application, visit [here](https://moventur.vercel.app/).
 
 - Countdown screen (main screen with a displayed challenge).
 
