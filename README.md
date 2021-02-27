@@ -23,6 +23,7 @@ This project was based on the project presented at Next Level Week # 04
   - suggested by NLW #04
     - [ ] Login with Github;
     - [ ] Serveless;
+    - [ ] Sharing;
     - [ ] Rankig page.
   - by ME
     - [ ] Reload page and keep countdown;
