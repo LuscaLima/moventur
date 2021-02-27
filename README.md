@@ -9,24 +9,25 @@ This project was based on the project presented at Next Level Week # 04
 ## ⬆️ Status
 
 > ✔️ The main phase is complete
+
 > 🚧 The construction of other pages and responsiveness is underway
 
 ## ✔️ Features (they can be incremented)
 
 - List
-  - by NLW #04
+  - **by NLW #04**
     - [x] Level progress bar;
     - [x] Completed challenges counter;
     - [x] Countdown;
     - [x] Challenge display;
     - [x] Text and audio notifications;
     - [x] Persistence of data in cookies.
-  - suggested by NLW #04
+  - **suggested by NLW #04**
     - [ ] Login with Github;
     - [ ] Serveless;
     - [ ] Sharing;
     - [ ] Rankig page.
-  - by ME
+  - **by ME**
     - [ ] Reload page and keep countdown;
     - [ ] Dark mode;
     - [ ] Portuguese and english idioms;
