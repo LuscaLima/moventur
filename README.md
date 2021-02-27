@@ -6,16 +6,20 @@ This project was based on the project presented at Next Level Week # 04
 
 > More description on the way 😉
 
-## Table of content
+## Table of contents
 
-- [Moventur](#moventur)
-- [Status](#status)
-- [Features](#features)
-- [Demo](#demo)
-- [Prerequisites](#prerequisites)
-- [Running](#running)
-- [Technologies](#technologies)
-- [Author](#author)
+<!--ts-->
+
+- [Moventur](#🏃‍♂️-moventur)
+- [Table of contents](#table-of-contents)
+- [Status](#⬆️-status)
+- [Features](#✔️-features)
+- [Demo](#🖼️-demo)
+- [Prerequisites](#💻-prerequisites)
+- [Running](#⚙️-running)
+- [Technologies](#⚛️-technologies)
+- [Author](#👨‍💼-author)
+<!--te-->
 
 ## ⬆️ Status
 
