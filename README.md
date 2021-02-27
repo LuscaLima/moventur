@@ -23,7 +23,7 @@ This project was based on the project presented at Next Level Week # 04
 
 ## 🖼️ Demo
 
-For now, just a screenshot:
+To use the application, visit [here](https://moventur.vercel.app/)
 
 - Countdown screen (main screen with a displayed challenge).
 
