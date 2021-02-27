@@ -24,7 +24,7 @@ export default function Home(props: HomeProps) {
   return (
     <ChallengesProvider {...props}>
       <Head>
-        <title>Início | Moventur</title>
+        <title>Início | mooven</title>
       </Head>
 
       <Container>

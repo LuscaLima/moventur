@@ -49,7 +49,7 @@ This project was based on the project presented at Next Level Week # 04
 
 ## 🖼️ Demo
 
-To use the application, visit **[here](https://moventur.vercel.app/)**.
+To use the application, visit **[here](https://mooven.vercel.app/)**.
 
 - Countdown screen (main screen with a displayed challenge).
 
