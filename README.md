@@ -6,13 +6,24 @@ This project was based on the project presented at Next Level Week # 04
 
 > More description on the way 😉
 
+## Table of content
+
+- [Moventur](#moventur)
+- [Status](#status)
+- [Features](#features)
+- [Demo](#demo)
+- [Prerequisites](#prerequisites)
+- [Running](#running)
+- [Technologies](#technologies)
+- [Author](#author)
+
 ## ⬆️ Status
 
 > ✔️ The main phase is complete
 
 > 🚧 The construction of other pages and responsiveness is underway
 
-## ✔️ Features (they can be incremented)
+## ✔️ Features
 
 - List
   - **by NLW #04**
@@ -33,6 +44,7 @@ This project was based on the project presented at Next Level Week # 04
     - [ ] Portuguese and english idioms;
     - [ ] Other color scheme;
     - [ ] PWA.
+    <!-- - [ ] Insígnias por conquista -->
 
 ## 🖼️ Demo
 
@@ -66,7 +78,7 @@ $ yarn dev
 # ready - started server on 0.0.0.0:3000, url: http://localhost:3000
 ```
 
-## ⚛️ Technologies used
+## ⚛️ Technologies
 
 The following tools were used in the construction of the project:
 
