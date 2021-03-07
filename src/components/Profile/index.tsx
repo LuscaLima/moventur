@@ -4,11 +4,14 @@ import { ChallengeContext } from '../../contexts/ChallengeContext'
 // Style
 import style from './style.module.scss'
 
+// Icons
+import { FaBolt, FaCrown } from 'react-icons/fa'
+
 export default function Profile() {
-  const { level } = useContext(ChallengeContext)
+  const { level, completedChallenges } = useContext(ChallengeContext)
 
   return (
-    <div className={style.profile}>
+    <div className={`${style.profile} mb-4 mb-md-2`}>
       <img
         src="https://github.com/luscalima.png"
         alt="Lusca Lima"
@@ -17,10 +20,16 @@ export default function Profile() {
       />
       <div className={style.description}>
         <h3 className={style.name}>Lusca Lima</h3>
-        <p className={style.level}>
-          <img src="icons/level.svg" alt="Ícone de nível do usuário" />
-          Level <strong>{level}</strong>
-        </p>
+        <div className={style.infos}>
+          <p className={style.level}>
+            <FaCrown />
+            <strong>{level.toString().padStart(2, '0')}</strong>
+          </p>
+          <p className={style.completed}>
+            <FaBolt />
+            <strong>{completedChallenges.toString().padStart(2, '0')}</strong>
+          </p>
+        </div>
       </div>
     </div>
   )

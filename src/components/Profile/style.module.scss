@@ -1,4 +1,4 @@
-@import "../../style/scss/colors";
+@import '../../style/scss/colors';
 
 .profile {
   display: flex;
@@ -12,6 +12,10 @@
   }
 
   .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 1.5rem;
 
     .name {
@@ -21,14 +25,43 @@
       font-weight: 600;
     }
 
-    .level {
-      margin-top: 0.4rem;
-      font-size: 1rem;
+    .infos {
+      display: flex;
 
-      img {
-        margin-right: 0.5rem;
-        margin-bottom: -0.15rem;
+      .level,
+      .completed {
+        margin-bottom: 0;
+        font-size: 1rem;
+
+        strong {
+          margin-left: 0.3rem;
+        }
+      }
+
+      .completed {
+        margin-left: 1rem;
+        display: none;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    display: none;
+    // .photo {
+    //   width: 4rem;
+    //   height: 4rem;
+    // }
+
+    // .description {
+    //   .name {
+    //     font-size: 1.25rem;
+    //   }
+
+    //   .infos .completed {
+    //     display: block;
+    //   }
+    // }
   }
 }

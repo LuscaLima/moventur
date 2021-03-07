@@ -1,8 +1,12 @@
 import { useContext, useEffect, useState } from 'react'
 import { CountdownContext } from '../../contexts/CountdownContext'
+import MButton from '../Button'
 
 // Style
 import style from './style.module.scss'
+
+// Icons
+import { FaCheck, FaPlay, FaTimes } from 'react-icons/fa'
 
 export default function Countdown() {
   const { start, reset, isActive, hasFinished, minutes, seconds } = useContext(
@@ -14,7 +18,7 @@ export default function Countdown() {
 
   return (
     <>
-      <div className={style.countdown}>
+      <div className={`${style.countdown} mb-2 mb-md-4`}>
         <div className={style.minutes}>
           <span>{minLeft}</span>
           <span>{minRight}</span>
@@ -26,22 +30,20 @@ export default function Countdown() {
         </div>
       </div>
       {isActive ? (
-        <button
-          type="button"
-          className={`${style.countdownButton} ${style.abandon}`}
-          onClick={reset}
-        >
-          Abandonar ciclo <span>&times;</span>
-        </button>
+        <MButton theme="red" size="large" block onClick={reset}>
+          Abandonar ciclo
+          <FaTimes />
+        </MButton>
       ) : hasFinished ? (
-        <button disabled className={style.countdownButton}>
-          Ciclo encerrado{' '}
-          <img src="icons/check_circle.svg" alt="Ícone de ciclo concluído" />
-        </button>
+        <MButton theme="white" size="large" block>
+          Ciclo encerrado
+          <FaCheck color="#67dd0d" />
+        </MButton>
       ) : (
-        <button type="button" className={style.countdownButton} onClick={start}>
+        <MButton theme="orange" size="large" block onClick={start}>
           Iniciar ciclo
-        </button>
+          <FaPlay />
+        </MButton>
       )}
     </>
   )

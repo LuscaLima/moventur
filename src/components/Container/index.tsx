@@ -1,11 +1,11 @@
 // Style
-import style from "./style.module.scss";
+import style from './style.module.scss'
 
 // Props definition
 type ContainerProps = {
-  children: any;
-};
+  children: any
+}
 
 export default function Container(props: ContainerProps) {
-  return <div className={style.container}>{props.children}</div>;
+  return <div className={style.container}>{props.children}</div>
 }

@@ -1,0 +1,116 @@
+@import '../../style/scss/colors';
+
+$navbar-width: 80px;
+
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: $navbar-width;
+    background-color: $light;
+    border-right: 3px solid $gray-line;
+
+    .brand,
+    .corner {
+      display: flex;
+      width: $navbar-width;
+      height: $navbar-width;
+    }
+
+    .menu {
+      flex: 1;
+      display: flex;
+
+      ul {
+        margin: auto 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: $navbar-width;
+          height: $navbar-width;
+          color: $blue;
+          border: 5px solid transparent;
+          font-size: 2.75rem;
+
+          // &.home {
+          // }
+
+          // &.ranking {
+          //   color: $blue;
+          // }
+
+          &:not(.active) {
+            color: $gray-line;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    background-color: $light;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column-reverse;
+
+    .navbar {
+      flex-direction: row;
+      width: 100%;
+      height: $navbar-width;
+      border-top: 3px solid $gray-line;
+      border-right: none;
+
+      .brand,
+      .corner {
+        display: none;
+      }
+
+      .menu ul {
+        margin: 0 auto;
+
+        li {
+          display: inline-flex;
+
+          &.active {
+            border-left-color: transparent;
+            // border-bottom-color: $orange;
+          }
+        }
+      }
+    }
+
+    .content {
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $white;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $gray-line;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: unset;
+      }
+    }
+  }
+}

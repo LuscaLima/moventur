@@ -1,8 +1,8 @@
 // Components
 import { GetServerSideProps } from 'next'
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import ExperienceBar from '../components/ExperienceBar'
-import Container from '../components/Container'
 import Profile from '../components/Profile'
 import CompleteChallenges from '../components/CompleteChallenges'
 import Countdown from '../components/Countdown'
@@ -24,36 +24,42 @@ export default function Home(props: HomeProps) {
   return (
     <ChallengesProvider {...props}>
       <Head>
-        <title>Início | mooven</title>
+        <title>Pomodoro | mooven</title>
       </Head>
 
-      <Container>
-        <ExperienceBar />
-        <section className={style.home}>
+      <div className="container d-flex flex-column px-md-5 px-4">
+        <div className="row">
+          <div className="col-md-10 offset-md-1 col-sm-12">
+            <ExperienceBar />
+          </div>
+        </div>
+        <div className="row my-auto gx-5">
           <CountdownProvider>
-            <div className={style.leftContainer}>
+            <div className="col-md-5 offset-md-1 pe-md-5 col-sm-12">
               <Profile />
               <CompleteChallenges />
               <Countdown />
             </div>
-            <div className={style.rightContainer}>
+            <div className="col-md-5 ps-md-5 col-sm-12 my-4 my-md-0">
               <ChallengeBox />
             </div>
           </CountdownProvider>
-        </section>
-      </Container>
+        </div>
+      </div>
     </ChallengesProvider>
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+Home.Layout = Layout
+
+export const getServerSideProps: GetServerSideProps = async context => {
   const { level, currentExperience, completedChallenges } = context.req.cookies
 
   return {
     props: {
-      level: parseInt(level),
-      currentExperience: parseInt(currentExperience),
-      completedChallenges: parseInt(completedChallenges),
+      level: parseInt(level) || 0,
+      currentExperience: parseInt(currentExperience) || 0,
+      completedChallenges: parseInt(completedChallenges) || 0,
     },
   }
 }

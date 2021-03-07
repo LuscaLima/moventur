@@ -1,0 +1,41 @@
+@import '../layout';
+@import '../colors';
+
+.login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: $blue;
+
+  .brand {
+    color: $white;
+    font-family: $mooven-font;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $white;
+  }
+
+  .container,
+  .row {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    .brand h1 {
+      font-size: 3rem;
+    }
+
+    // p {
+    //   display: none;
+    // }
+  }
+}

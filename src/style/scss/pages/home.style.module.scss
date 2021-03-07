@@ -5,4 +5,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   margin-top: 2rem;
+
+  // .container,
+  .row {
+    height: 1;
+  }
 }

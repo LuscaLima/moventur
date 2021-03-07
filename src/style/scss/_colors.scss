@@ -1,14 +1,32 @@
 // COLORS
 
 $white: #fff;
+$light: #fcfcfc;
+$dark: #212529;
+$blue: #39d7f3;
+$red: #f54d28;
+$orange: #ffaa47;
+$pink: #e33cc7;
+$green: #92e950;
+
+$text: #666666;
+$title: #2e384d;
 $background: #f2f3f5;
 $gray-line: #dcdde0;
-$text: #666666;
 $text-highlight: #b3b9ff;
-$title: #2e384d;
-$red: #e83f5b;
-$orange: #f59a45;
-$green: #4cd62b;
-$blue: #5965e0;
+// $light: #f8f9fa;
+// $red: #fc4848;
+// $orange: #ffa500;
+// $blue: #1cb0f6;
+// $pink: #ef93cd;
+// $green: #67dd0d;
 $blue-dark: #4953b8;
 $blue-twitter: #2aa9e0;
+
+$colors: (
+  'dark': $dark,
+  'white': $white,
+  'red': $red,
+  'green': $green,
+  'orange': $orange,
+);

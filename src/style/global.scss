@@ -1,21 +1,26 @@
-@import "../style/scss/layout";
-@import "../style/scss/colors";
-@import "../style/scss/media_queries";
+// Bootstrap grid
+@import './css/bootstrap-reboot.min.css';
+@import './css/bootstrap-grid.min.css';
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
+// mooven style
+@import '../style/scss/layout';
+@import '../style/scss/colors';
+@import '../style/scss/media_queries';
+
+// *,
+// *::after,
+// *::before {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   outline: none;
+// }
 
 body {
   line-height: 1.5;
   color: $text;
   font-family: $main-font, $fallback-font;
-  background-color: $background;
+  background-color: $light;
 }
 
 input,
