@@ -1,0 +1,84 @@
+@import '../../style/scss/colors';
+@import '../../style/scss/layout';
+
+.rankingItem {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: $radius-md;
+  border: 2px solid transparent;
+
+  .position,
+  .experience,
+  .challenges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .position {
+    width: 70px;
+    font-weight: bold;
+  }
+
+  .challenges {
+    justify-content: flex-start;
+    width: 180px;
+  }
+
+  .experience {
+    justify-content: flex-start;
+    width: 120px;
+  }
+
+  .user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .photo {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      border-radius: 100%;
+    }
+  }
+
+  &:hover {
+    border-color: $gray-line;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rankingItem {
+    .position {
+      width: 50px;
+    }
+
+    .challenges {
+      width: 40px;
+
+      span {
+        display: none;
+      }
+    }
+
+    .experience {
+      width: 100px;
+    }
+
+    // .user {
+    //   flex: 1;
+    //   display: flex;
+    //   align-items: center;
+
+    //   .photo {
+    //     width: 50px;
+    //     height: 50px;
+    //     margin-right: 1rem;
+    //     border-radius: 100%;
+    //   }
+    // }
+  }
+}

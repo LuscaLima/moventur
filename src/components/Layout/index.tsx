@@ -27,8 +27,8 @@ export default function Layout({ children }: LayoutProps) {
         <header className={style.brand}></header>
         <div className={style.menu}>
           <ul>
-            <Link href="/">
-              <li className={`${style['home']} ${isLinkActive('/')}`}>
+            <Link href="/app">
+              <li className={`${style['home']} ${isLinkActive('/app')}`}>
                 <FaHome />
               </li>
             </Link>

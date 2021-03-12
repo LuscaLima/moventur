@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-color: $blue;
+  background-color: darken($blue, 15);
 
   .brand {
     color: $white;
@@ -33,9 +33,5 @@
     .brand h1 {
       font-size: 3rem;
     }
-
-    // p {
-    //   display: none;
-    // }
   }
 }
